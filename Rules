@@ -1,0 +1,40 @@
+#!/usr/bin/env ruby
+compile '/static/*' do
+end
+
+compile '/member/*/' do
+  filter :erb
+  filter :kramdown
+  layout 'member'
+end
+
+compile '*' do
+  case item[:extension]
+  when 'md'
+    filter :erb
+    filter :kramdown
+    layout 'default'
+  when 'erb'
+    filter :erb
+    layout 'default'
+  when 'haml'
+    filter :haml, :attr_wrapper => '"'
+    layout 'default'
+  end
+end
+
+route '/static/*' do
+  '/assets'+item.identifier[7..-2]
+end
+
+route '*' do
+  if item.binary?
+    # Write item with identifier /foo/ to /foo.ext
+    item.identifier.chop + '.' + item[:extension]
+  else
+    # Write item with identifier /foo/ to /foo/index.html
+    item.identifier + 'index.html'
+  end
+end
+
+layout '*', :erb

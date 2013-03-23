@@ -1,0 +1,10 @@
+*.swp
+*.swo
+*~
+.DS_Store
+*#
+*emacs.desktop*
+output
+tmp
+crash.log
+Gemfile.lock
