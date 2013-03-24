@@ -9,7 +9,8 @@ gem 'pygments.rb'
 gem 'nokogiri'
 gem 'yajl-ruby'
 gem 'mime-types', '~> 1.16'
-
+gem 'nanoc-toolbox', '~> 0.1.1'
+gem 'active_support'
 group :development do
   gem 'adsf'
   gem 'fssm'

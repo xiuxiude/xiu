@@ -1,0 +1,11 @@
+body {
+  padding-top: 60px;
+}
+
+.avatar {
+  margin: 5px auto;
+  width: 50px;
+}
+.info {
+  text-align: center;
+}

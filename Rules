@@ -2,25 +2,24 @@
 compile '/static/*' do
 end
 
-compile '/member/*/' do
-  filter :erb
-  filter :kramdown
-  layout 'member'
-end
 
 compile '*' do
   case item[:extension]
   when 'md'
     filter :erb
     filter :kramdown
-    layout 'default'
+    layout '/default/'
   when 'erb'
     filter :erb
-    layout 'default'
+    layout '/default/'
   when 'haml'
     filter :haml, :attr_wrapper => '"'
-    layout 'default'
+    layout '/default/'
   end
+end
+
+route '/favicon/' do
+  '/favicon.ico'
 end
 
 route '/static/*' do
@@ -37,4 +36,4 @@ route '*' do
   end
 end
 
-layout '*', :erb
+layout '*', :haml, :attr_wrapper => '"'

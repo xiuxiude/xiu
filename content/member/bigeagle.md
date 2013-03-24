@@ -2,10 +2,11 @@
 kind: member
 name: "Justin Wong"
 site: "http://bigeagle.me/"
-twitter: "bigealge_xd_"
+rss: "http://bigeagle.me/feed"
+twitter: "bigealge_xd"
 douban: ""
 github: "bigeagle"
-email: "bigeagle@xdlinux.info"
+email: "justin.w.xd@gmail.com"
 title: "Justin Wong"
 ---
 

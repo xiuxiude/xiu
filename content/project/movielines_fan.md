@@ -1,5 +1,5 @@
 ---
-kind: member
+kind: project
 name: "Zoe"
 site: "http://tomato.xiuxiu.de/"
 twitter: ""

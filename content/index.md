@@ -1,5 +1,7 @@
 ---
-title: "Home"
+title: The Index
+id: index
+kind: index
 ---
 
 ## Projects
