@@ -4,8 +4,9 @@
     - if item[:kind] == "index"
       %title 羞
     - else
-      %title= title_of(@item)
-      | 羞
+      %title
+        = title_of(item)
+        \ · 羞
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
     %meta{:name => "description", :content => "羞"}
     %meta{:name => "author", :content => "Sean Lee"}
@@ -18,6 +19,7 @@
     / Le styles
     %link{ :href => "/assets/css/bootstrap.min.css", :type => "text/css", :rel => "stylesheet" }
     %link{ :href => "/assets/css/bootstrap-responsive.min.css", :type => "text/css", :rel => "stylesheet" }
+    %link{ :href => "/assets/css/font-awesome.min.css", :type => "text/css", :rel => "stylesheet" }
     / add body padding styles
     %link{ :href => "/assets/css/style.css", :type => "text/css", :rel => "stylesheet" }
     / Le fav and touch icons
@@ -34,19 +36,18 @@
     - elsif @item[:kind] == 'project'
       = render('_project', :item => @item, :content => content)
     - else
-
-    .container
-      .row
-        .span3
-          .sidebar
-            %ul.nav.member-list
-              %span.nav-header Human Beings
-              - members.each do |member| 
-                %li.clear-fix
-                  .avatar= avatar(member, :size => "50", :class => "img-circle center")
-                  .info= link_to(member[:name], member[:site])
-        .span9
-          = content
+      .container
+        .row
+          .span3
+            .sidebar
+              %ul.nav.member-list
+                %span.nav-header Human Beings
+                - members.each do |member| 
+                  %li.clear-fix
+                    .avatar= member_avatar(member, :size => "50", :class => "img-circle center")
+                    .info= link_to(member[:name], member.path)
+          .span9
+            = content
 
     / Placed at the end of the document so the pages load faster    
     %script{ :type => "text/javascript", :src =>"/assets/js/jquery-1.9.1.min.js"}

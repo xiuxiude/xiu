@@ -6,6 +6,5 @@ twitter: "butternofly"
 douban: "45843396"
 github: ""
 email: "hdjtlm@gmail.com"
-title: "Dai Wei"
 ---
 

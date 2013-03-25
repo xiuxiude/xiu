@@ -4,8 +4,7 @@ name: "Axknightroad"
 site: "http://sangbuqi.com"
 twitter: "axknightroad"
 douban: "axknightroad"
-github: "axknightroad"
+github: ""
 email: "axknightroad@gmail.com"
-title: "Axknightroad"
 ---
 

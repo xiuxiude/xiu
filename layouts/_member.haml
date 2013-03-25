@@ -1,0 +1,25 @@
+.container
+  .row
+    .span3.member-info
+      .face= member_avatar(item, :size => "200", :class => "img-polaroid")
+      .site
+        %i.icon-link
+        = member_site(item)
+      .github
+        %i.icon-github-alt
+        = member_github(item)
+      .twitter
+        %i.icon-twitter
+        = member_twitter(item)
+      .email
+        %i.icon-envelope
+        = member_email(item)
+      .movies
+        %i.icon-book
+        最近在读
+        = member_book(item)
+    .span9
+      .projects
+        %ul
+        - member_projects(item).each do |project|
+          %li
