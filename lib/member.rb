@@ -1,3 +1,4 @@
+require 'pry-remote'
 def members
   @items.select { |item| item[:kind] == 'member' }
 end
@@ -30,8 +31,14 @@ def member_book(member)
   end
 end
 
-def member_projects(member)
-  if member[:github].present? and projects = Octokit.repositories(member[:github])
-    projects.slice(0, 5)
+def member_github_projects(member)
+  if member[:github].present? and projects = Octokit.repositories(member[:github], :type => "owner").select {|event| event.fork == false}
+    projects
+  end
+end
+
+def member_github_events(member)
+  if member[:github].present? and events = Octokit.user_events(member[:github])
+    events
   end
 end

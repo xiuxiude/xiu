@@ -35,6 +35,8 @@
       = render('_member', :item => @item, :content => content)
     - elsif @item[:kind] == 'project'
       = render('_project', :item => @item, :content => content)
+    - elsif @item[:kind] == 'index'
+      = render('_index', :item => @item, :content => content)
     - else
       .container
         .row

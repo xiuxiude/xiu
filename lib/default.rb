@@ -9,6 +9,11 @@ Douban.configure do |config|
   config.client_secret = ENV['DOUBAN_API_SECRET']
 end
 
+Octokit.configure do |config|
+  config.client_id = ENV['GITHUB_API_KEY']
+  config.client_secret = ENV['GITHUB_API_KEY']
+end
+
 def title_of(item)
   return item[:title] if item[:title]
   return item[:name] if item[:name]

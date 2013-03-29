@@ -6,6 +6,11 @@ body {
   margin: 5px auto;
   width: 50px;
 }
+
 .info {
   text-align: center;
+}
+
+.projects .btn {
+  margin: 2px;
 }

@@ -1,0 +1,12 @@
+.container
+  .row
+    .span3
+      .sidebar
+        %ul.nav.member-list
+          %span.nav-header Human Beings
+          - members.each do |member| 
+            %li.clear-fix
+              .avatar= member_avatar(member, :size => "50", :class => "img-circle center")
+              .info= link_to(member[:name], member.path)
+    .span9
+      = content
