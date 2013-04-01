@@ -11,7 +11,7 @@ end
 
 Octokit.configure do |config|
   config.client_id = ENV['GITHUB_API_KEY']
-  config.client_secret = ENV['GITHUB_API_KEY']
+  config.client_secret = ENV['GITHUB_API_SECRET']
 end
 
 def title_of(item)

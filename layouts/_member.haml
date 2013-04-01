@@ -14,26 +14,29 @@
       .email
         %i.icon-envelope
         = member_email(item)
-      .movies
+      .book
         %i.icon-book
-        最近在读
-        = member_book(item)
+        - if book = member_book(item)
+          最近在读 
+          = book
+        - else
+          最近没有在读书
     .span9
       .projects
         - if projects = member_github_projects(item)
           %ul.unstyled
-          - projects.each do |project|
-            %li
-              %i.icon-desktop
-              = project.name
-              %a.btn.btn-small.pull-right{:href => project.html_url}
-                %i.icon-github
-                Wactch
-                %span= project.watchers_count
-              %a.btn.btn-small.pull-right{:href => project.html_url}
-                %i.icon-github
-                Fork
-                %span= project.forks_count
-              %p.clear-fix= project.description
+            - projects.each do |project|
+              %li
+                %i.icon-desktop
+                = project.name
+                %a.btn.btn-small.pull-right{:href => project.html_url}
+                  %i.icon-github
+                  Wactch
+                  %span= project.watchers_count
+                %a.btn.btn-small.pull-right{:href => project.html_url}
+                  %i.icon-github
+                  Fork
+                  %span= project.forks_count
+                %p.clear-fix= project.description
               
             

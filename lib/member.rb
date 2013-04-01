@@ -24,10 +24,13 @@ def member_email(member)
 end
 
 def member_book(member)
-  if member[:douban].present? and book = Douban.books(member[:douban], :status => "reading").first
-    link_to book.book.title, book.book.alt
-  else
-    "暂时没有在读书啦"
+  if member[:douban].present?
+    begin
+      book = Douban.books(member[:douban], :status => "reading").first
+      sleep 2
+      return link_to(book.book.title, book.book.alt)
+    rescue Exception => e
+    end
   end
 end
 

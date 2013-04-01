@@ -35,11 +35,11 @@
       = render('_member', :item => @item, :content => content)
     - elsif @item[:kind] == 'project'
       = render('_project', :item => @item, :content => content)
-    - elsif @item[:kind] == 'index'
-      = render('_index', :item => @item, :content => content)
+    - elsif ["members", "projects"].include?(@item[:kind])
+      = render(@item[:kind], :item => @item, :content => content)
     - else
-      .container
-        .row
+      .container-fluid
+        .row-fluid
           .span3
             .sidebar
               %ul.nav.member-list

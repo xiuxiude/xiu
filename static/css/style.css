@@ -14,3 +14,8 @@ body {
 .projects .btn {
   margin: 2px;
 }
+
+.members .avatar {
+  width: 200px;
+  margin: 20px;
+}

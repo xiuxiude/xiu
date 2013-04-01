@@ -1,0 +1,7 @@
+.container
+  .row
+    .span10.offset1.members.center
+      - members.each do |member| 
+        .member.pull-left
+          .avatar= member_avatar(member, :size => "300", :class => "img-rounded")
+          .info= link_to(member[:name], member.path)
