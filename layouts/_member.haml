@@ -11,9 +11,6 @@
       .twitter
         %i.icon-twitter
         = member_twitter(item)
-      .email
-        %i.icon-envelope
-        = member_email(item)
       .book
         %i.icon-book
         - if book = member_book(item)
@@ -24,6 +21,7 @@
     .span9
       .projects
         - if projects = member_github_projects(item)
+          %h2 Projects
           %ul.unstyled
             - projects.each do |project|
               %li
@@ -38,5 +36,11 @@
                   Fork
                   %span= project.forks_count
                 %p.clear-fix= project.description
-              
-            
+      .posts
+        - if item[:rss].present? and feed = member_feed(item)
+          %h2 Posts
+          %ul.unstyled
+            - feed.entries.first(5).each do |post|
+              %li
+                %i.icon-asterisk
+                = link_to(post.title, post.url)

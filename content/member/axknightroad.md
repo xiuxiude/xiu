@@ -2,6 +2,7 @@
 kind: member
 name: "Axknightroad"
 site: "http://sangbuqi.com"
+rss: "http://sangbuqi.com/?feed=rss2"
 twitter: "axknightroad"
 douban: "axknightroad"
 github: ""

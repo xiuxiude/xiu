@@ -1,4 +1,6 @@
+require 'feedzirra'
 require 'pry-remote'
+
 def members
   @items.select { |item| item[:kind] == 'member' }
 end
@@ -44,4 +46,8 @@ def member_github_events(member)
   if member[:github].present? and events = Octokit.user_events(member[:github])
     events
   end
+end
+
+def member_feed(member)
+  Feedzirra::Feed.fetch_and_parse(member[:rss])
 end

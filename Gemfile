@@ -13,10 +13,12 @@ gem 'yajl-ruby'
 gem 'mime-types', '~> 1.16'
 gem 'nanoc-toolbox', '~> 0.1.1'
 gem 'active_support'
+gem 'feedzirra'
 
 group :development do
   gem 'adsf'
   gem 'fssm'
   gem 'pry'
   gem 'pry-remote'
+  gem 'rake'
 end
