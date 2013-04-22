@@ -25,5 +25,12 @@ kind: index
 * [doubanIMDb](http://userscripts.org/scripts/show/103552)
 
   Bad films are bad
+  
+  
+## Experimental
+
+* [Cool 24](http://24.xiuxiu.de/)
+
+  简单游戏，简单生活
 
 
