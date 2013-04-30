@@ -29,6 +29,10 @@ kind: index
   
 ## Experimental
 
+* [Coursera Alfred](https://chrome.google.com/webstore/detail/coursera-alfred/cjjehbjgmmokhogpdbgglloebgcifieb?utm_source=chrome-ntp-icon)
+
+  你的Coursera 助手
+
 * [Cool 24](http://24.xiuxiu.de/)
 
   简单游戏，简单生活
