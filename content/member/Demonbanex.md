@@ -6,6 +6,6 @@ rss: ""
 twitter: "Demonbane_x"
 douban: ""
 github: "Demonbanex"
-email: "Demonbane.cn@gmail.com"
+email: "demonbane.cn@gmail.com"
 ---
 
