@@ -37,10 +37,10 @@
                   %span= project.forks_count
                 %p.clear-fix= project.description
       .posts
-        - if item[:rss].present? and feed = member_feed(item)
+        - if item[:rss].present? and posts = member_feed(item)
           %h2 Posts
           %ul.unstyled
-            - feed.entries.first(5).each do |post|
+            - posts.first(5).each do |post|
               %li
                 %i.icon-asterisk
                 = link_to(post.title, post.url)

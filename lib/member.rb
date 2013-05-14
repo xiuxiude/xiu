@@ -49,5 +49,10 @@ def member_github_events(member)
 end
 
 def member_feed(member)
-  Feedzirra::Feed.fetch_and_parse(member[:rss])
+  feed = Feedzirra::Feed.fetch_and_parse(member[:rss])
+  begin
+    feed.entries
+  rescue Exception => e
+    []
+  end
 end
