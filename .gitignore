@@ -7,3 +7,5 @@
 output
 tmp
 crash.log
+*ruby-version
+*ruby-gemset
