@@ -1,11 +1,8 @@
 ---
 kind: project
-name: "Zoe"
-site: "http://tomato.xiuxiu.de/"
-twitter: ""
-douban: ""
-github: ""
-email: "example@example.com"
-title: "Zoe"
+name: "movielines_fan"
+maintainers: ["cyan", "sean"]
+site: "http://twitter.com/movielines_fan"
+description: "每个人心中的那句电影"
 ---
 

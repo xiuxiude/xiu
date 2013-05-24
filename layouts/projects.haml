@@ -1,0 +1,16 @@
+.container
+  %section#project
+  - projects.each do |project|
+    .row
+      .span10.offset1.members.center
+        %h3
+          %i.icon-home
+          = link_to(project[:name], project.path)
+        %blockquote
+          %p= project[:description]
+        
+        %h3 Maintainers
+        %ul.maintainers.unstyled
+          - maintainers(project[:maintainers]).each do |member| 
+            %li.pull-left= link_to(member_avatar(member, :size => "50", :class => "img-circle"), member.path)
+    %hr

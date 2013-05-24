@@ -1,6 +1,7 @@
 ---
 kind: member
 name: "Martin"
+id: "martin"
 site: ""
 twitter: "martinxiong0418"
 douban: "1727356"

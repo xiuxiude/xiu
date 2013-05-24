@@ -1,11 +1,10 @@
 ---
 kind: project
-name: "Zoe"
-site: "http://tomato.xiuxiu.de/"
-twitter: ""
-douban: ""
-github: ""
-email: "example@example.com"
-title: "Zoe"
+name: "doubanIMDb"
+id: "doubanimdb"
+maintainers: ["sean"]
+site: "http://userscripts.org/scripts/show/103552"
+github: "seansay/doubanIMDb"
+description: "Bad films are bad"
 ---
 

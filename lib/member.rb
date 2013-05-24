@@ -1,8 +1,11 @@
 require 'feedzirra'
-require 'pry-remote'
 
 def members
   @items.select { |item| item[:kind] == 'member' }
+end
+
+def maintainers(people)
+  members.select { |item| people.include?(item[:id]) }
 end
 
 def member_avatar(member, options={})

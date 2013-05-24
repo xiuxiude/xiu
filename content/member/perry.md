@@ -1,6 +1,7 @@
 ---
 kind: member
 name: "Perry Pan"
+id: "perry"
 site: ""
 rss: ""
 twitter: "plrthink"

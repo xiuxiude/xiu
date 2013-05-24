@@ -19,3 +19,7 @@ body {
   width: 100px;
   margin: 20px;
 }
+.maintainers img {
+  width: 50px;
+  margin: 10px;
+}

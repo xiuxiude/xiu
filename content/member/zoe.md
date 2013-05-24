@@ -1,6 +1,7 @@
 ---
 kind: member
 name: "Zoe"
+id: "zoe"
 site: "http://tomato.xiuxiu.de/"
 rss: "http://tomato.xiuxiu.de/?feed=rss2"
 twitter: ""

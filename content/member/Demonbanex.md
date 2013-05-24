@@ -1,6 +1,7 @@
 ---
 kind: member
 name: "Demonbane"
+id: "demonbane"
 site: ""
 rss: ""
 twitter: "Demonbane_x"

@@ -1,6 +1,7 @@
 ---
 kind: member
 name: "Dai Wei"
+id: "daiwei"
 site: "http://daiwei.de/"
 twitter: "butternofly"
 douban: "45843396"

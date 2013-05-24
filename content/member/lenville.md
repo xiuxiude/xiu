@@ -1,6 +1,7 @@
 ---
 kind: member
 name: "Lenville"
+id: "lenville"
 site: "http://lenville.com"
 rss: ""
 twitter: "lenivlle_nek"

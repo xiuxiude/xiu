@@ -1,6 +1,7 @@
 ---
 kind: member
 name: "ggarlic"
+id: "ggarlic"
 site: "http://ggarlic.org/"
 rss: "http://ggarlic.org/blog/?feed=rss2"
 twitter: "ggarlic"

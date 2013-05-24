@@ -1,11 +1,10 @@
 ---
 kind: project
-name: "Zoe"
-site: "http://tomato.xiuxiu.de/"
-twitter: ""
-douban: ""
-github: ""
-email: "example@example.com"
-title: "Zoe"
+name: "The Setup"
+maintainers: ["sean", "shanzi"]
+id: "thesetup"
+site: "http://setup.xiuxiu.de/"
+github: "xiuxiude/usesthis"
+description: "他们用什么搞定生活?"
 ---
 

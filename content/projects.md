@@ -1,7 +1,4 @@
 ---
 title: "Projects"
+kind: projects
 ---
-
-# Projects
-
-主人很懒，什么都没留下

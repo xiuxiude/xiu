@@ -1,6 +1,7 @@
 ---
 kind: member
 name: "iCaker"
+id: "icaker"
 site: "http://icaker.info/"
 rss: "http://icaker.info/?feed=rss2"
 twitter: "icaker"
