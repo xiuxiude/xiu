@@ -1,12 +1,12 @@
 ---
 kind: member
-name: "Perry Pan"
+name: "Perry Poon"
 id: "perry"
 site: ""
 rss: ""
 twitter: "plrthink"
-douban: "PanLR"
-github: "PerryPan"
+douban: "Perry Poon"
+github: "plrthink"
 email: "plrthink@gmail.com"
 ---
 
